@@ -23,7 +23,7 @@ namespace WeatherService
             _logger = logger;
         }
 
-        private List<WeatherForecastModel> GetWeatherRecords()
+        private async Task<List<WeatherForecastModel>> GetWeatherRecords()
         {
             var records = new List<WeatherForecastModel>();
 
@@ -38,7 +38,7 @@ namespace WeatherService
 
                 var request = new RestRequest(Method.GET);
 
-                IRestResponse response = client.Execute(request);
+                IRestResponse response = await client.ExecuteAsync(request);
 
                 if (response.StatusCode == HttpStatusCode.OK)
                 {
@@ -65,7 +65,7 @@ namespace WeatherService
 
             ColorConsole.WriteLine("info: ".Green(), "Subscriber socket connected.");
 
-            var records = GetWeatherRecords();
+            var records = await GetWeatherRecords();
 
             foreach (var item in records)
             {
