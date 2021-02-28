@@ -10,7 +10,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using RestSharp;
-using WeatherService.Model;
+using WeatherService.Models;
 
 namespace WeatherService
 {
