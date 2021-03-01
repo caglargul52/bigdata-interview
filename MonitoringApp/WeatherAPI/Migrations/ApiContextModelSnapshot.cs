@@ -16,7 +16,7 @@ namespace WeatherAPI.Migrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "5.0.3");
 
-            modelBuilder.Entity("WeatherAPI.Models.WeatherForecastModel", b =>
+            modelBuilder.Entity("WeatherAPI.Entities.WeatherForecastModel", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()

@@ -16,7 +16,7 @@ namespace WeatherAPI.Models
         public List<Datum> Data { get; set; }
     }
 
-    public class WeatherForecastApiModel
+    public class DarkSkyApiModel
     {
         public double Latitude { get; set; }
         public double Longitude { get; set; }

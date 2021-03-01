@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using WeatherAPI.Data;
-using WeatherAPI.Models;
+﻿using WeatherAPI.Data;
+using WeatherAPI.Entities;
 using WeatherAPI.Repository.Interface;
 
 namespace WeatherAPI.Repository.Concrete

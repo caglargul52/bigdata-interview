@@ -9,8 +9,8 @@ using WeatherAPI.Data;
 namespace WeatherAPI.Migrations
 {
     [DbContext(typeof(ApiContext))]
-    [Migration("20210228181003_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20210301104858_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -18,7 +18,7 @@ namespace WeatherAPI.Migrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "5.0.3");
 
-            modelBuilder.Entity("WeatherAPI.Models.WeatherForecastModel", b =>
+            modelBuilder.Entity("WeatherAPI.Entities.WeatherForecastModel", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
